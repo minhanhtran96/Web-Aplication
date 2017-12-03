@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Siri</title>
 </head>
 <body>
-
+<script>
+   console.log("siri is asking for name...")
+   let name = prompt("Who are you?")
+   console.log("given name: " + name)
+   console.log("introducing...")
+   let age = prompt("Siri: Hello " + name + ", I'm siri and I'm 5 minutes old. How old are you?")
+   console.log("given age: " + age)
+   let comment = prompt(age < 20 ? 'Oh, you are defenitely a millenial, are you a student?':'Oh You must be a graduated, what do you do?')
+   console.log('job:' + comment)
+</script>
 </body>
 </html>
