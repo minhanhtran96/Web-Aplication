@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbox</title>
+</head>
+<body>
+<script>
+    let name = askforpuppyname();
+    let age = askforpuppyage();
+    let realage = calcRealage(age);
+    document.write(name + "\ " + "is" + "\ " + realage + "\ " + "years old!");
+
+    function askforpuppyname() {
+        return prompt("what\'s your puppy name?")
+    }
+    function askforpuppyage() {
+        return prompt("How old are your puppy?")
+    }
+    function calcRealage(age) {
+        return age*7
+    }
+</script>
+</body>
+</html>
