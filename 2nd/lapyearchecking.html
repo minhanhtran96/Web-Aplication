@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name = askforname();
+    let chaohoi = greeting(name);
+    let year = askforyear();
+    let kiemtra = checking(year);
+
+    function askforname() {
+        return prompt("Hello, please give me your name.")
+    }
+
+    function greeting(name){
+        return alert("Hi" + "," + name + "!" + "Welcome to the time checking machine!")
+    }
+
+    function askforyear(){
+        return prompt("Which year do you want to check?")
+    }
+
+    function checking(year){
+        if (year % 4 == 0) {
+            alert("Yes" + "," + "This is a leap year.");
+        } else {
+            alert("No" + "," + "This is not a leap year.");
+        }
+        return kiemtra
+    }
+</script>
+</body>
+</html>
